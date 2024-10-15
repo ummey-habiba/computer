@@ -1,7 +1,9 @@
-import 'package:computer/dashboard.dart';
-import 'package:computer/details_page.dart';
-import 'package:computer/e_s_dashboard.dart';
+
+import 'package:computer/details%20page/detailsScreen.dart';
+import 'package:computer/models/products.dart';
 import 'package:flutter/material.dart';
+
+import 'home page/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,10 +22,11 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-    initialRoute:DashBoard.routeName,
+initialRoute: DashBoard.routeName,
       routes: {
-DashBoard.routeName:(context)=> DashBoard(),
-DetailsPage.routeName:(context)=> DetailsPage(),
+        DashBoard.routeName:(context)=> DashBoard(),
+
+
       },
     );
   }
