@@ -7,7 +7,8 @@ import 'body.dart';
 
 
 class DetailsScreen extends StatelessWidget {
-   const DetailsScreen({super.key,});
+   const DetailsScreen({super.key, required this.product,});
+   final Product product;
   static const String routeName = '/details';
   @override
   Widget build(BuildContext context, ) {

@@ -78,6 +78,7 @@ class _DashBoardState extends State<DashBoard> {
                       index: index,
                       product:ProductList[index],
                       press: () {
+                        print('anything');
                         Navigator.push(
                           context,
                           MaterialPageRoute(

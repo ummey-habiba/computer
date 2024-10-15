@@ -21,16 +21,14 @@ class productCard extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-    return Container(
-      margin: EdgeInsets.symmetric(
-        horizontal: kDefaultPadding,
-        vertical: kDefaultPadding / 2,
-      ),
-      height: 160,
-      child: InkWell(
-        onTap: () {
-
-        },
+    return InkWell(
+      onTap:() => press,
+      child: Container(
+        margin: EdgeInsets.symmetric(
+          horizontal: kDefaultPadding,
+          vertical: kDefaultPadding / 2,
+        ),
+        height: 160,
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
